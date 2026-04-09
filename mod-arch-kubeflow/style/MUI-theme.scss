@@ -128,10 +128,11 @@
   --pf-t--global--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--color--status--info--default: var(--mui-palette-info-main);
 
-  // Status Non-Status Colors
+  // Non-Status Colors
   --pf-t--global--color--nonstatus--blue--default: var(--mui-palette-primary-light);
   --pf-t--global--color--nonstatus--blue--hover: var(--mui-palette-primary-light);
-  
+
+  // Status Icon Colors
   --pf-t--global--icon--color--status--danger--default: var(--mui-palette-error-main);
   --pf-t--global--icon--color--status--warning--default: var(--mui-palette-warning-main);
   --pf-t--global--icon--color--status--success--default: var(--mui-palette-success-main);
@@ -149,11 +150,17 @@
   --pf-t--global--border--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--border--color--status--info--default: var(--mui-palette-info-main);
 
+  // Non-Status Border Colors
+  --pf-t--global--border--color--nonstatus--blue--default: var(--mui-palette-primary-light);
+
   // Status Border Hover Colors (for labels, alerts, etc.)
   --pf-t--global--border--color--status--warning--hover: var(--mui-palette-warning-main);
   --pf-t--global--border--color--status--success--hover: var(--mui-palette-success-main);
   --pf-t--global--border--color--status--info--hover: var(--mui-palette-info-main);
   --pf-t--global--border--color--status--danger--hover: var(--mui-palette-error-main);
+
+  // Non-Status Border Hover Colors
+  --pf-t--global--border--color--nonstatus--blue--hover: var(--mui-palette-primary-light);
 
   // MUI's warning background is darker than PF's default yellow, requiring white text for contrast
   --pf-t--global--text--color--status--on-warning--default: var(--mui-palette-warning-contrastText);
