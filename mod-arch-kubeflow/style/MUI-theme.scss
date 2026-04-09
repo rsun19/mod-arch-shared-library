@@ -35,7 +35,6 @@
   --pf-t--global--color--brand--default: var(--mui-palette-primary-main);
   --pf-t--global--color--brand--hover: var(--mui-palette-primary-dark);
   --pf-t--global--color--brand--clicked: var(--mui-palette-primary-dark);
-  --pf-t--global--color--nonstatus--blue--default: var(--mui-palette-primary-main);
 
   // ═══════════════════════════════════════════════════════════════════════════
   // BACKGROUND COLORS (47+ components affected)
@@ -128,11 +127,21 @@
   --pf-t--global--color--status--warning--default: var(--mui-palette-warning-main);
   --pf-t--global--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--color--status--info--default: var(--mui-palette-info-main);
+
+  // Status Non-Status Colors
+  --pf-t--global--color--nonstatus--blue--default: var(--mui-palette-primary-light);
+  --pf-t--global--color--nonstatus--blue--hover: var(--mui-palette-primary-light);
   
   --pf-t--global--icon--color--status--danger--default: var(--mui-palette-error-main);
   --pf-t--global--icon--color--status--warning--default: var(--mui-palette-warning-main);
   --pf-t--global--icon--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--icon--color--status--info--default: var(--mui-palette-info-main);
+
+  // Status Hover Colors (for labels, alerts, etc.)
+  --pf-t--global--color--status--warning--hover: var(--mui-palette-warning-main);
+  --pf-t--global--color--status--success--hover: var(--mui-palette-success-main);
+  --pf-t--global--color--status--info--hover: var(--mui-palette-info-main);
+  --pf-t--global--color--status--danger--hover: var(--mui-palette-error-main);
   
   // Status Border Colors (for alerts, form validation, etc.)
   --pf-t--global--border--color--status--danger--default: var(--mui-palette-error-main);
@@ -140,8 +149,19 @@
   --pf-t--global--border--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--border--color--status--info--default: var(--mui-palette-info-main);
 
+  // Status Border Hover Colors (for labels, alerts, etc.)
+  --pf-t--global--border--color--status--warning--hover: var(--mui-palette-warning-main);
+  --pf-t--global--border--color--status--success--hover: var(--mui-palette-success-main);
+  --pf-t--global--border--color--status--info--hover: var(--mui-palette-info-main);
+  --pf-t--global--border--color--status--danger--hover: var(--mui-palette-error-main);
+
   // MUI's warning background is darker than PF's default yellow, requiring white text for contrast
   --pf-t--global--text--color--status--on-warning--default: var(--mui-palette-warning-contrastText);
+  --pf-t--global--text--color--status--on-warning--hover: var(--mui-palette-warning-contrastText);
+
+  // Status Non-Status Text Colors for blue labels
+  --pf-t--global--text--color--nonstatus--on-blue--default: var(--pf-t--global--text--color--inverse);
+  --pf-t--global--text--color--nonstatus--on-blue--hover: var(--pf-t--global--text--color--inverse);
 
   // ═══════════════════════════════════════════════════════════════════════════
   // MUI CUSTOM VARIABLES
@@ -1841,19 +1861,10 @@ left: 0;
   --pf-v6-c-button--PaddingInlineEnd: var(--mui-spacing-4px);
 }
 
-.mui-theme .pf-v6-c-label {
-  --pf-v6-c-label--m-blue--Color: var(--pf-t--global--text--color--inverse);
-}
-
 .mui-theme .pf-v6-c-label-group.pf-m-category {
   --pf-v6-c-label-group--m-category--BorderWidth: 0px;
   // Border radius inherited from --pf-t--global--border--radius--small (set to MUI shape-borderRadius)
   box-shadow: var(--mui-shadows-1);
-}
-
-.mui-theme .pf-v6-c-label.pf-m-outline {
-  --pf-v6-c-label--BorderColor: none;
-  --pf-v6-c-label--BackgroundColor: var(--mui-palette-grey-200);
 }
 
 .mui-theme .pf-v6-c-masthead {
