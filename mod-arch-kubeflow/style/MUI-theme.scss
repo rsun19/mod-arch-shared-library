@@ -138,6 +138,10 @@
   --pf-t--global--icon--color--status--success--default: var(--mui-palette-success-main);
   --pf-t--global--icon--color--status--info--default: var(--mui-palette-info-main);
 
+  // Non-Status Icon Colors
+  --pf-t--global--icon--color--nonstatus--on-blue--default: var(--pf-t--global--icon--color--inverse);
+  --pf-t--global--icon--color--nonstatus--on-blue--hover: var(--pf-t--global--icon--color--inverse);
+
   // Status Hover Colors (for labels, alerts, etc.)
   --pf-t--global--color--status--warning--hover: var(--mui-palette-warning-main);
   --pf-t--global--color--status--success--hover: var(--mui-palette-success-main);
