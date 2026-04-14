@@ -134,6 +134,18 @@ npm run lint:fix          # Fix linting issues
 
 ---
 
+## Agent Skills
+
+Skills provide multi-step workflows. They live in `.cursor/skills/`. Read the relevant skill file
+before starting the task.
+
+| Skill | Directory | Use when |
+| ------------------- | -------------------------------- | ------------------------------------------------------------------- |
+| **Release Version** | `.cursor/skills/release-version/` | Preparing a release, bumping version, or creating a release PR |
+| **Review** | `.cursor/skills/review/` | Reviewing code for design token violations, SCSS convention drift, or theme wrapper compliance |
+
+---
+
 ## Package-Specific Guidelines
 
 Each package may have its own AGENTS.md with package-specific guidance:
